@@ -334,3 +334,20 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     width: 25%;
     padding: 0 60px;
 }
+
+.join-to-us {
+    width: 100%;
+}
+
+.join-to-us h2{
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.join-to-us h3{
+    text-align: center;
+    color: grey;
+    font-weight: 400;
+}
+
