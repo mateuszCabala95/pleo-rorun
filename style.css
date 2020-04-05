@@ -1,0 +1,172 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+    /* border: 1px solid black; */
+}
+
+section.aboutUs div.container h2 {
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 100px;
+}
+
+section.aboutUs div.container h2 p {
+    font-size: 35px;
+    line-height: 60px;
+    font-weight: 300;
+}
+
+section.aboutUs div.container h2 p::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100px;
+    background-color: rgb(114, 113, 113);
+    text-align: center;
+    margin: 20px auto;
+}
+
+section.aboutUs div.container p.motto {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 200px 30px 200px;
+}
+
+section.aboutUs div.items-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+section.aboutUs div.items-wrapper .item {
+    width: 33.33%;
+    text-align: center;
+    margin: 60px 0;
+}
+
+section.aboutUs div.items-wrapper .item img {
+    width: 100px;
+    height: 100px;
+    margin: 30px 0;
+}
+
+section.aboutUs div.items-wrapper .item h5 {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+section.aboutUs div.items-wrapper .item p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 300;
+    padding: 30px 40px 30px 40px;
+}
+
+section.aboutUs div.numbers-wrapper {
+    height: 230px;
+    background-color: rgb(228, 227, 227);
+}
+
+section.aboutUs div.numbers-wrapper .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+}
+
+section.aboutUs div.numbers-wrapper .container .number {
+    width: 25%;
+    text-align: center;
+}
+
+section.aboutUs div.numbers-wrapper .container .number h3 {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(7, 179, 113);
+    font-weight: 900;
+}
+
+section.aboutUs div.numbers-wrapper .container .number p {
+    font-size: 20px;
+    line-height: 24px;
+    font: 300;
+}
+
+section.aboutUs div.collab {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(7, 179, 113);
+}
+
+section.aboutUs div.collab .container h4 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+section.aboutUs div.collab .container p {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+
+section.aboutUs div.collab .container p::after {
+    content: "";
+    display: block;
+    margin: 20px auto;
+    background-color: #fff;
+    height: 1px;
+    width: 200px;
+}
+
+section.aboutUs div.collab .container .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: baseline;
+    margin-top: 90px;
+
+}
+
+section.aboutUs div.collab .container .logo-wrapper .logo {
+    width: 25%;
+    padding: 0 60px;
+}
