@@ -397,14 +397,14 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
 }
 
 
-section.news div.intro {
+section.news-articles div.intro {
     /* height: 250px; */
     margin-top: 80px;
 }
 
 
 
-section.news div.intro h3 {
+section.news-articles div.intro h3 {
     font-size: 36px;
     line-height: 50px;
     color: black;
@@ -412,7 +412,7 @@ section.news div.intro h3 {
     text-align: center;
 }
 
-section.news div.intro h4 {
+section.news-articles div.intro h4 {
     font-size: 30px;
     line-height: 30px;
     color: black;
@@ -421,7 +421,7 @@ section.news div.intro h4 {
 
 }
 
-section.news div.intro h4::after {
+section.news-articles div.intro h4::after {
     content: "";
     display: block;
     margin: 20px auto;
@@ -433,19 +433,19 @@ section.news div.intro h4::after {
 }
 
 
-section.news div.articles {
+section.news-articles div.articles {
     height: 500px;
     background-color: rgb(228, 227, 227);
     width: 100%;
 }
 
 
-section.news div.articles .conteiner .articles-wrapper {
+section.news-articles div.articles .conteiner .articles-wrapper {
     display: flex;
     justify-content: center;
 }
 
-section.news div.articles .conteiner .article {
+section.news-articles div.articles .conteiner .article {
     background-color: white;
     width: 33.33%;
     margin: 30px 70px;
@@ -454,19 +454,19 @@ section.news div.articles .conteiner .article {
 
 }
 
-section.news div.articles .conteiner .article h5,
+section.news-articles div.articles .conteiner .article h5,
 p {
     text-align: left;
 }
 
-section.news div.articles .conteiner .article h5 {
+section.news-articles div.articles .conteiner .article h5 {
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
     padding: 20px 0 0 20px;
 }
 
-section.news div.articles .conteiner .article p {
+section.news-articles div.articles .conteiner .article p {
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
