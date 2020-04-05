@@ -353,7 +353,12 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     font-weight: 400;
     margin-bottom: 20px;
 }
-
+.join-to-us .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
 .single-card{
     width: 100%;
     max-width: 400px;
@@ -386,4 +391,46 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     text-align: center;
     font-weight: 300;
     line-height: 1.3em;
+}
+
+.banner{
+    width: 100%;
+    text-align: center;
+    background-color:rgb(7, 179, 113);
+    padding-bottom: 25px;
+}
+.banner .container{
+    text-align: center;
+}
+.banner p {
+    color: white;
+
+    line-height: 1.2em;
+}
+.motto{
+    padding: 20px 0 0;
+}
+.motto:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background-color: white;
+
+    margin: 25px auto;
+}
+
+.sign{
+    padding: 0 0 25px;
+}
+
+.banner a {
+    text-decoration: none;
+    color: rgb(7, 179, 113);
+    background-color: white;
+    outline: none;
+
+    padding: 10px 25px;
+
+    margin: 25px 0;
 }
