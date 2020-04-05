@@ -108,6 +108,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 @media screen  and (min-width: 1200px) {
