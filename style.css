@@ -398,8 +398,8 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
 
 
 section.news div.intro {
-    height: 250px;
-    margin-top: 100px;
+    /* height: 250px; */
+    margin-top: 80px;
 }
 
 
@@ -418,7 +418,7 @@ section.news div.intro h4 {
     color: black;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 40px;
+
 }
 
 section.news div.intro h4::after {
@@ -429,4 +429,46 @@ section.news div.intro h4::after {
     height: 1px;
     width: 200px;
     margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+
+section.news div.articles {
+    height: 500px;
+    background-color: rgb(228, 227, 227);
+    width: 100%;
+}
+
+
+section.news div.articles .conteiner .articles-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+section.news div.articles .conteiner .article {
+    background-color: white;
+    width: 33.33%;
+    margin: 30px 70px;
+    border-bottom: 3px solid rgb(7, 179, 113);
+    text-align: center;
+
+}
+
+section.news div.articles .conteiner .article h5,
+p {
+    text-align: left;
+}
+
+section.news div.articles .conteiner .article h5 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 20px 0 0 20px;
+}
+
+section.news div.articles .conteiner .article p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    padding: 0 0 20px 20px;
 }
