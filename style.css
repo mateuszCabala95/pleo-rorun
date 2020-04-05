@@ -1,21 +1,23 @@
 
-*{
+* {
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /*Header and navigation*/
-header{
+header {
     position: relative;
     width: 100%;
     /*height: 10vh;*/
     margin: 25px;
 }
 
-header .container{
+header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,13 +26,13 @@ header .container{
     margin-top: 20px;
 }
 
-header .logo{
+header .logo {
     width: 25vw;
     height: auto;
 
 }
 
-.mobile-btn{
+.mobile-btn {
     position: relative;
     width: 50px;
     height: 5px;
@@ -39,7 +41,7 @@ header .logo{
     transition: 0.2s ease;
 }
 
-.mobile-btn::after,.mobile-btn::before{
+.mobile-btn::after, .mobile-btn::before {
     content: "";
     display: block;
     width: 50px;
@@ -48,30 +50,31 @@ header .logo{
     position: absolute;
     z-index: 10;
 }
-.mobile-btn::before{
+
+.mobile-btn::before {
     top: -15px;
 }
-.mobile-btn::after{
+
+.mobile-btn::after {
     top: 15px;
 }
 
 
-
-.mobile-btn.hide-hamburger::after{
+.mobile-btn.hide-hamburger::after {
     top: 10px;
     right: -15px;
-    transform:translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 10;
 }
 
-.mobile-btn.hide-hamburger::before{
+.mobile-btn.hide-hamburger::before {
     top: 10px;
     right: -15px;
-    transform:translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
     z-index: 10;
 }
 
-nav{
+nav {
     position: absolute;
     top: -20px;
     left: 0;
@@ -82,9 +85,10 @@ nav{
     transition: 0.2s ease;
 }
 
-nav.hidden-menu{
+nav.hidden-menu {
     top: -50vh;
 }
+
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +99,7 @@ nav ul {
     list-style: none;
 }
 
-nav li{
+nav li {
     width: 100px;
     margin: 10px 0;
     display: inline-block;
@@ -106,8 +110,49 @@ nav a {
     color: black;
 }
 
+@media screen  and (min-width: 1200px) {
+    .mobile-btn {
+        display: none;
+    }
 
-.home{
+    .hidden-menu {
+        top: 0;
+        left: 0;
+    }
+
+    nav {
+        position: static;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    nav li {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    nav li:hover {
+        font-weight: bold;
+    }
+
+    nav li:last-of-type {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    nav a {
+        font-size: 1.2em;
+        color: aqua;
+    }
+
+}
+
+.home {
     width: 100%;
     background: white url("assets/home/background_image.jpg") no-repeat center;
     background-size: cover;
@@ -117,46 +162,72 @@ nav a {
 
     padding-top: 25px;
 }
-.home .container{
+
+.home .container {
     padding-bottom: 25px;
 }
-.home h1{
+
+.home h1 {
     margin: 0;
     font-weight: bold;
     padding-top: 25%;
     font-size: 4em;
 }
 
-.home h2{
+.home h2 {
     margin: 0;
     font-size: 2em;
 }
-.home p::after{
+
+.home p::after {
     content: "";
     display: block;
     width: 50%;
-border-top: 1px solid white;
+    border-top: 1px solid white;
     color: white;
     margin: 20px 0;
 }
-.home a{
+
+.home a {
     text-decoration: none;
     color: white;
     margin: 20px 0;
 }
-@media screen  and (min-width: 768px){
-    .home{
+
+@media screen  and (min-width: 768px) {
+    .home {
         padding-top: 35px;
         font-size: 1.2em;
     }
-    .home .container{
+
+    .home .container {
         padding-bottom: 35px;
     }
 
-    .home p::after{
+    .home p::after {
         margin: 30px 0;
     }
-    .home a{
+
+    .home a {
         margin: 30px 0;
+    }
+}
+
+@media screen  and (min-width: 1200px) {
+    .home {
+        padding-top: 35px;
+        font-size: 1.4em;
+    }
+
+    .home .container {
+        padding-bottom: 35px;
+    }
+
+    .home p::after {
+        margin: 40px 0;
+    }
+
+    .home a {
+        margin: 40px 0;
     }
 }
