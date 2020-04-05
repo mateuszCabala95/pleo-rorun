@@ -340,14 +340,50 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
 }
 
 .join-to-us h2{
+    width: 100%;
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
 }
 
 .join-to-us h3{
+    width: 100%;
     text-align: center;
     color: grey;
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
+.single-card{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px auto;
+    }
+
+.single-card h4{
+    font-size: 1.4em;
+    font-weight: lighter;
+    margin: 15px 0;
+}
+
+.single-card h4::after{
+    content: "";
+    display: block;
+    width: 120px;
+    margin: 10px auto;
+    height: 1px;
+    /*color: black;*/
+    background-color: black;
+}
+
+.single-card span{
+    color: aqua;
+}
+.single-card p {
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.3em;
+}
