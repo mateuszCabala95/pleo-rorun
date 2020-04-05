@@ -1,27 +1,36 @@
-
 * {
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 }
+
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 header {
     position: relative;
     /*height: 10vh;*/
     width: 100%;
     margin: 25px;
 }
+
 header .container {
     display: flex;
     flex-direction: row;
@@ -29,11 +38,13 @@ header .container {
     align-items: center;
     margin-top: 20px;
 }
+
 header .logo {
     width: 25vw;
     height: auto;
 
 }
+
 .mobile-btn {
     width: 50px;
     position: relative;
@@ -41,7 +52,9 @@ header .logo {
     background-color: coral;
     transition: 0.2s ease;
 }
-.mobile-btn::after, .mobile-btn::before {
+
+.mobile-btn::after,
+.mobile-btn::before {
     content: "";
     width: 50px;
     display: block;
@@ -50,24 +63,29 @@ header .logo {
     position: absolute;
     z-index: 10;
 }
+
 .mobile-btn::before {
     top: -15px;
 }
+
 .mobile-btn::after {
     top: 15px;
 }
+
 .mobile-btn.hide-hamburger::after {
     top: 10px;
     right: -15px;
     transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 10;
 }
+
 .mobile-btn.hide-hamburger::before {
     right: -15px;
     top: 10px;
     transform: translate(-50%, -50%) rotate(45deg);
     z-index: 10;
 }
+
 nav {
     position: absolute;
     left: 0;
@@ -76,9 +94,11 @@ nav {
     background-color: #fff;
     transition: 0.2s ease;
 }
+
 nav.hidden-menu {
     top: -50vh;
 }
+
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -87,49 +107,60 @@ nav ul {
     align-items: center;
     list-style: none;
 }
+
 nav li {
     width: 100px;
     margin: 10px 0;
     display: inline-block;
 }
+
 nav a {
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
-@media screen  and (min-width: 1200px) {
+
+@media screen and (min-width: 1200px) {
     .mobile-btn {
         display: none;
     }
+
     .hidden-menu {
         top: 0;
         left: 0;
     }
+
     nav {
         width: 100%;
         position: static;
     }
+
     nav ul {
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
     }
+
     nav li {
         flex-basis: 100%;
         text-align: center;
     }
+
     nav li:hover {
         font-weight: bold;
     }
+
     nav a {
         font-size: 12pt;
         color: aqua;
 
     }
+
     nav a:hover {
         font-weight: bold;
     }
-    }
+}
+
 .home {
     width: 100%;
     background: white url("assets/home/background_image.jpg") no-repeat center;
@@ -138,19 +169,23 @@ nav a {
     font-family: sans-serif;
     padding-top: 25px;
 }
+
 .home .container {
     padding-bottom: 25px;
 }
+
 .home h1 {
     margin: 0;
     font-weight: bold;
     padding-top: 25%;
     font-size: 4em;
 }
+
 .home h2 {
     margin: 0;
     font-size: 2em;
 }
+
 .home p::after {
     content: "";
     display: block;
@@ -159,12 +194,14 @@ nav a {
     color: white;
     margin: 20px 0;
 }
+
 .home a {
     text-decoration: none;
     color: white;
     margin: 20px 0;
 }
-@media screen  and (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
     .home {
         padding-top: 35px;
         font-size: 1.2em;
@@ -182,7 +219,8 @@ nav a {
         margin: 30px 0;
     }
 }
-@media screen  and (min-width: 1200px) {
+
+@media screen and (min-width: 1200px) {
     .home {
         padding-top: 35px;
         font-size: 1.4em;
@@ -197,21 +235,26 @@ nav a {
         font-weight: 900;
 
     }
+
     .home h2 {
         font-size: 54pt;
     }
-    .home p{
+
+    .home p {
         font-size: 18pt;
     }
+
     .home p::after {
         margin: 40px 0;
     }
+
     .home a {
         font-size: 18pt;
         font-style: italic;
         margin: 40px 0;
     }
 }
+
 section.aboutUs div.container h2 {
     font-size: 60px;
     line-height: 80px;
@@ -219,11 +262,13 @@ section.aboutUs div.container h2 {
     font-weight: 900;
     padding-top: 100px;
 }
+
 section.aboutUs div.container h2 p {
     font-size: 35px;
     line-height: 60px;
     font-weight: 300;
 }
+
 section.aboutUs div.container h2 p::after {
     content: "";
     display: block;
@@ -233,6 +278,7 @@ section.aboutUs div.container h2 p::after {
     text-align: center;
     margin: 20px auto;
 }
+
 section.aboutUs div.container p.motto {
     font-size: 20px;
     line-height: 30px;
@@ -240,20 +286,24 @@ section.aboutUs div.container p.motto {
     text-align: center;
     padding: 20px 200px 30px 200px;
 }
+
 section.aboutUs div.items-wrapper {
     display: flex;
     justify-content: center;
 }
+
 section.aboutUs div.items-wrapper .item {
     width: 33.33%;
     text-align: center;
     margin: 60px 0;
 }
+
 section.aboutUs div.items-wrapper .item img {
     width: 100px;
     height: 100px;
     margin: 30px 0;
 }
+
 section.aboutUs div.items-wrapper .item h5 {
     font-size: 24px;
     line-height: 24px;
@@ -261,6 +311,7 @@ section.aboutUs div.items-wrapper .item h5 {
     padding: 10px 0;
     font-weight: 400;
 }
+
 section.aboutUs div.items-wrapper .item p {
     font-size: 16px;
     line-height: 26px;
@@ -268,20 +319,24 @@ section.aboutUs div.items-wrapper .item p {
     font-weight: 300;
     padding: 30px 40px 30px 40px;
 }
+
 section.aboutUs div.numbers-wrapper {
     height: 230px;
     background-color: rgb(228, 227, 227);
 }
+
 section.aboutUs div.numbers-wrapper .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 230px;
 }
+
 section.aboutUs div.numbers-wrapper .container .number {
     width: 25%;
     text-align: center;
 }
+
 section.aboutUs div.numbers-wrapper .container .number h3 {
     font-size: 60px;
     line-height: 60px;
@@ -289,16 +344,19 @@ section.aboutUs div.numbers-wrapper .container .number h3 {
     color: rgb(7, 179, 113);
     font-weight: 900;
 }
+
 section.aboutUs div.numbers-wrapper .container .number p {
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
 }
+
 section.aboutUs div.collab {
     height: 400px;
     width: 100%;
     background-color: rgb(7, 179, 113);
 }
+
 section.aboutUs div.collab .container h4 {
     font-size: 35px;
     font-weight: 900;
@@ -307,6 +365,7 @@ section.aboutUs div.collab .container h4 {
     text-align: center;
     padding: 100px 0 0 0;
 }
+
 section.aboutUs div.collab .container p {
     font-size: 30px;
     line-height: 30px;
@@ -314,6 +373,7 @@ section.aboutUs div.collab .container p {
     font-weight: 300;
     text-align: center;
 }
+
 section.aboutUs div.collab .container p::after {
     content: "";
     display: block;
@@ -322,6 +382,7 @@ section.aboutUs div.collab .container p::after {
     height: 1px;
     width: 200px;
 }
+
 section.aboutUs div.collab .container .logo-wrapper {
     display: flex;
     justify-content: center;
@@ -433,4 +494,81 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     padding: 10px 25px;
 
     margin: 25px 0;
+}
+
+
+section.news div.intro {
+    /* height: 250px; */
+    margin-top: 80px;
+}
+
+
+
+section.news div.intro h3 {
+    font-size: 36px;
+    line-height: 50px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+section.news div.intro h4 {
+    font-size: 30px;
+    line-height: 30px;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+section.news div.intro h4::after {
+    content: "";
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(192, 192, 192);
+    height: 1px;
+    width: 200px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+
+section.news div.articles {
+    height: 500px;
+    background-color: rgb(228, 227, 227);
+    width: 100%;
+}
+
+
+section.news div.articles .conteiner .articles-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+section.news div.articles .conteiner .article {
+    background-color: white;
+    width: 33.33%;
+    margin: 30px 70px;
+    border-bottom: 3px solid rgb(7, 179, 113);
+    text-align: center;
+
+}
+
+section.news div.articles .conteiner .article h5,
+p {
+    text-align: left;
+}
+
+section.news div.articles .conteiner .article h5 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 20px 0 0 20px;
+}
+
+section.news div.articles .conteiner .article p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    padding: 0 0 20px 20px;
 }
