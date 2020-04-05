@@ -146,11 +146,16 @@ nav a {
     }
 
     nav a {
-        font-size: 1.2em;
+        font-size: 12pt;
         color: aqua;
+
+    }
+    nav a:hover {
+        font-weight: bold;
     }
 
-}
+
+    }
 
 .home {
     width: 100%;
@@ -223,11 +228,24 @@ nav a {
         padding-bottom: 35px;
     }
 
+    .home h1 {
+        font-size: 100pt;
+        font-weight: 900;
+    }
+
+    .home h2 {
+        font-size: 54pt;
+    }
+    .home p{
+        font-size: 18pt;
+    }
     .home p::after {
         margin: 40px 0;
     }
 
     .home a {
+        font-size: 18pt;
+        font-style: italic;
         margin: 40px 0;
     }
 }
