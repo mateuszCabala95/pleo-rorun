@@ -286,3 +286,20 @@ nav a {
     background-color: black;
 }
 
+.contact p {
+    font-size: 0.8em;
+    color: grey;
+    line-height: 1.2em;
+    margin-bottom: 25px;
+}
+
+.contact iframe {
+    border: none;
+    width: 100%;
+}
+
+.contact .logo{
+    display: none;
+}
+
+
