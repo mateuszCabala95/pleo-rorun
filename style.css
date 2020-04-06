@@ -453,16 +453,16 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     line-height: 1.3em;
 }
 
-.banner{
+.home{
     width: 100%;
     text-align: center;
     background-color:rgb(7, 179, 113);
     padding-bottom: 25px;
 }
-.banner .container{
+.home .container{
     text-align: center;
 }
-.banner p {
+.home p {
     color: white;
 
     line-height: 1.2em;
@@ -484,7 +484,7 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     padding: 0 0 25px;
 }
 
-.banner a {
+.home a {
     text-decoration: none;
     color: rgb(7, 179, 113);
     background-color: white;
