@@ -163,9 +163,98 @@ nav a {
 
 .home {
     width: 100%;
-    background: white url("assets/home/background_image.jpg") no-repeat center;
+    background: white url("assets/aktualnosci/background_image.jpg") no-repeat center;
     background-size: cover;
     color: white;
     font-family: sans-serif;
     padding-top: 25px;
+}
+
+.home .container {
+    padding-bottom: 25px;
+}
+
+.home h1 {
+    margin: 0;
+    font-weight: 900;
+    padding-top: 25%;
+    font-size: 45px;
+}
+
+.home h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.home p::after {
+    content: "";
+    display: block;
+    width: 50%;
+    border-top: 1px solid white;
+    color: white;
+    margin: 20px 0;
+}
+
+.home a {
+    text-decoration: none;
+    color: white;
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .home h1 {
+        font-size: 60px;
+    }
+
+    .home {
+        padding-top: 35px;
+        font-size: 1.2em;
+    }
+
+    .home .container {
+        padding-bottom: 35px;
+    }
+
+    .home p::after {
+        margin: 30px 0;
+    }
+
+    .home a {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .home {
+        padding-top: 35px;
+        font-size: 1.4em;
+    }
+
+    .home .container {
+        padding-bottom: 35px;
+    }
+
+    .home h1 {
+        font-size: 100pt;
+        font-weight: 900;
+
+    }
+
+    .home h2 {
+        font-size: 54pt;
+    }
+
+    .home p {
+        font-size: 18pt;
+    }
+
+    .home p::after {
+        margin: 40px 0;
+    }
+
+    .home a {
+        font-size: 18pt;
+        font-style: italic;
+        margin: 40px 0;
+    }
 }
