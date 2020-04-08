@@ -25,7 +25,6 @@ body {
 }
 
 
-
 header {
     position: relative;
     width: 100%;
@@ -261,14 +260,15 @@ nav a {
         margin: 40px 0;
     }
 }
-.contact  h2{
+
+.contact h2 {
     width: 100%;
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
 }
 
-.contact h3{
+.contact h3 {
     width: 100%;
     text-align: center;
     color: grey;
@@ -276,7 +276,7 @@ nav a {
     margin-bottom: 20px;
 }
 
-.contact h3::after{
+.contact h3::after {
     content: "";
     display: block;
     width: 120px;
@@ -298,8 +298,77 @@ nav a {
     width: 100%;
 }
 
-.contact .logo{
+.contact .logo {
     display: none;
 }
 
+.contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
 
+.contact-card form {
+    width: 100%;
+}
+
+.form-wrapper {
+    position: relative;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.form-wrapper p {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    color: rgb(7, 179, 113);
+}
+
+.form-wrapper input {
+    width: 65%;
+box-shadow: none;
+}
+
+
+.form-wrapper textarea {
+    width: 65%;
+}
+
+.contact-card button {
+    width: 100%;
+    background-color: rgb(7, 179, 113);
+    color: white;
+    line-height: 200%;
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+@keyframes blinking-border {
+    0% {
+        border: 2px solid rgba(255, 0, 0, 0.5);
+        box-shadow: 0 0 2px red;
+    }
+    50% {
+        border: 2px solid rgba(255, 0, 0, 0.75);
+        box-shadow: 0 0 3px red;
+    }
+    100%{
+        border: 2px solid rgba(255, 0, 0, 1);
+        box-shadow: 0 0 5px red;
+    }
+
+}
