@@ -15,7 +15,7 @@ p {
 
 body {
     overflow-x: hidden;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -42,7 +42,6 @@ header .container {
 header .logo {
     width: 25vw;
     height: auto;
-
 }
 
 .mobile-btn {
@@ -153,7 +152,6 @@ nav a {
     nav a {
         font-size: 12pt;
         color: aqua;
-
     }
 
     nav a:hover {
@@ -237,7 +235,6 @@ nav a {
     .home h1 {
         font-size: 100pt;
         font-weight: 900;
-
     }
 
     .home h2 {
@@ -266,7 +263,6 @@ section.news .container h3 {
     font-weight: 900;
     margin-top: 80px;
     padding-bottom: 10px;
-    ;
 }
 
 section.news .container h4 {
@@ -295,7 +291,7 @@ section.news .container p {
     margin-bottom: 60px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     section.news .container h3 {
         font-size: 40px;
         line-height: 40px;
@@ -311,7 +307,7 @@ section.news .container p {
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     section.news .container h3 {
         font-size: 70px;
         line-height: 70px;
@@ -330,24 +326,85 @@ section.news .container p {
 
     section.news .container p {
         font-size: 26px;
+        line-height: 30px;
         font-weight: 100;
     }
 }
 
-section.news div.container div.articles-wrapper {
+section.news .container .articles-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
-section.news div.container div.articles-wrapper .article {
+section.news .container .articles-wrapper .article {
     width: 100%;
-    justify-content: center;
-
+    margin: 20px 0;
+    border-bottom: 3px solid rgb(7, 179, 113);
 }
 
-section.news div.container div.articles-wrapper h5 {
+section.news div.container div.articles-wrapper .article img {
+    width: 100%;
+}
+
+section.news div.container div.articles-wrapper .article h5 {
     padding-top: 20px;
     font-size: 16px;
     font-weight: 100;
+    line-height: 24px;
+    margin: 0 0 0 15px;
+}
+
+section.news div.container div.articles-wrapper .article h6 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 100;
+    color: rgb(107, 107, 107);
+    margin: 0 0 15px 15px;
+}
+
+@media screen and (min-width: 768px) {
+    section.news .container .articles-wrapper {
+        flex-direction: row;
+    }
+
+    section.news .container .articles-wrapper .article {
+        width: 45%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section.news .container .articles-wrapper {
+        flex-direction: row;
+    }
+
+    section.news .container .articles-wrapper .article {
+        width: 45%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.news .container .articles-wrapper {
+        flex-direction: row;
+    }
+
+    section.news .container .articles-wrapper .article {
+        width: 30%;
+        margin: 20px auto;
+    }
+}
+
+section.news div.container .btn {
+    position: absolute;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: rgb(7, 179, 113);
+    text-align: center;
+    padding: 5px 50px;
+    margin: auto 0;
+    text-decoration: none;
 }
