@@ -15,7 +15,7 @@
 
 </head>
 <body>
-<header>
+<header id="header">
     <div class="container">
         <img src="assets/home/rorun_logo.jpg" alt="Rorun logo" class="logo">
         <div class="mobile-btn"></div>
@@ -54,31 +54,31 @@
     <div class="contact-card container">
         <form>
             <div class="form-wrapper">
-            <label for="name">Your name</label>
-            <input id="name" type="text" required>
+                <label for="name">Your name</label>
+                <input id="name" type="text" required>
                 <p>required</p>
             </div>
 
             <div class="form-wrapper">
-            <label for="email">Your email</label>
-            <input id="email" type="email" required>
+                <label for="email">Your email</label>
+                <input id="email" type="email" required>
                 <p>required</p>
             </div>
 
             <div class="form-wrapper">
-            <label for="subject">Your subject</label>
-            <input id="subject" type="text">
+                <label for="subject">Your subject</label>
+                <input id="subject" type="text">
             </div>
 
             <div class="form-wrapper">
-            <label for="message">Your message</label>
-            <textarea id="message" cols="30" rows="10" required></textarea>
+                <label for="message">Your message</label>
+                <textarea id="message" cols="30" rows="10" required></textarea>
                 <p>required</p>
             </div>
 
             <button>wyślij</button>
         </form>
-        <address>
+        <address class="address-wrapper">
             <h5>Kontakt</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias distinctio ipsam minima perferendis, quas
                 voluptate?</p>
@@ -87,17 +87,17 @@
                 porro.
             </p>
 
-            <div class="address">
+            <div class="address-container">
                 B.Limanowskiego 36/30 <br>
                 Kraków
             </div>
 
-            <div class="phone">
+            <div class="address-container">
                 <a href="tel:03123456">03 123 45 67</a>
                 <a href="tel:0412345687">0412 345 687</a>
             </div>
 
-            <div class="web">
+            <div class="address-container">
                 <a href="mailto:info@rorun.com">info@rorun.com</a>
                 <a href="http://www.rorun.com">www.rorun.com</a>
             </div>
@@ -106,5 +106,13 @@
     </div>
 </section>
 
+
+<footer>
+    <div class="container">
+        <div class="rights">&copy; 2018 Rorun. All rights reserved</div>
+        <a href="#header">^</a>
+        <img src="assets/home/Facebook%20Icon2.png" alt="ikona facebooka" class="icon">
+    </div>
+</footer>
 </body>
 </html>
