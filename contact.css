@@ -456,6 +456,82 @@ footer img {
     }
 }
 
+
+@media screen and (min-width: 1200px){
+
+    .contact h2 {
+        font-size: 2.5em;
+    }
+
+    .contact h3 {
+        font-size: 2em;
+        margin-bottom: 25px;
+    }
+
+    .contact h3::after {
+        width: 250px;
+        margin: 40px auto;
+    }
+
+    .contact p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-bottom: 45px;
+    }
+
+
+    .contact iframe {
+        height: 450px;
+    }
+
+    .contact .logo {
+        position: absolute;
+        top: 26%;
+        left: 50%;
+        height: 25px;
+        display: block;
+        transform: translateX(-50%);
+    }
+
+    .contact-card{
+        width: 80%;
+        display: flex;
+        position: relative;
+        top: -200px;
+
+        background-color: white;
+
+        justify-content: space-around;
+    }
+
+    .contact-card form {
+        width: 65%;
+    }
+    .contact-card button {
+        width: 25%;
+    }
+
+    .form-wrapper p {
+        top: -30px;
+    }
+
+
+    .address-wrapper{
+        width: 25%;
+        justify-content: flex-start;
+    }
+
+
+    footer .container {
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    footer a {
+        margin-right: 165px;
+    }
+}
+
 @keyframes blinking-border {
     0% {
         border: 2px solid rgba(255, 0, 0, 0.5);
