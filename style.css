@@ -26,7 +26,6 @@ body {
 
 header {
     position: relative;
-    /*height: 10vh;*/
     width: 100%;
     margin: 25px;
 }
@@ -628,7 +627,7 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     padding: 0 0 25px;
 }
 
-.banner a {
+.home a {
     text-decoration: none;
     color: rgb(7, 179, 113);
     background-color: white;
