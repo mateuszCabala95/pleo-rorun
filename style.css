@@ -255,7 +255,7 @@ nav a {
 }
 
 section.aboutUs div.container h2 {
-    font-size: 60px;
+    font-size: 50px;
     line-height: 80px;
     text-align: center;
     font-weight: 900;
@@ -263,9 +263,10 @@ section.aboutUs div.container h2 {
 }
 
 section.aboutUs div.container h2 p {
-    font-size: 35px;
+    font-size: 28px;
     line-height: 60px;
     font-weight: 300;
+    text-align: center;
 }
 
 section.aboutUs div.container h2 p::after {
@@ -279,32 +280,67 @@ section.aboutUs div.container h2 p::after {
 }
 
 section.aboutUs div.container p.motto {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     font-weight: 300;
     text-align: center;
-    padding: 20px 200px 30px 200px;
+    padding: 20px;
+}
+
+
+@media screen and (min-width:768px) {
+    section.aboutUs div.container h2 {
+        font-size: 55px;
+        padding-top: 100px;
+    }
+
+    section.aboutUs div.container h2 p {
+        font-size: 32px;
+    }
+
+    section.aboutUs div.container p.motto {
+        font-size: 20px;
+        padding: 20px 50px 30px 50px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    section.aboutUs div.container h2 {
+        font-size: 60px;
+        padding-top: 100px;
+    }
+
+    section.aboutUs div.container h2 p {
+        font-size: 35px;
+    }
+
+    section.aboutUs div.container p.motto {
+        font-size: 20px;
+        padding: 20px 150px 30px 150px;
+    }
 }
 
 section.aboutUs div.items-wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 section.aboutUs div.items-wrapper .item {
-    width: 33.33%;
+    width: 100%;
     text-align: center;
-    margin: 60px 0;
+    margin: 30px 0;
 }
 
 section.aboutUs div.items-wrapper .item img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: 30px 0;
 }
 
 section.aboutUs div.items-wrapper .item h5 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 24px;
     text-align: center;
     padding: 10px 0;
@@ -312,15 +348,46 @@ section.aboutUs div.items-wrapper .item h5 {
 }
 
 section.aboutUs div.items-wrapper .item p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
     text-align: center;
     font-weight: 300;
     padding: 30px 40px 30px 40px;
 }
 
+@media screen and (min-width:768px) {
+    section.aboutUs div.items-wrapper {
+        flex-direction: row;
+    }
+
+    section.aboutUs div.items-wrapper .item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    section.aboutUs div.items-wrapper .item h5 {
+        font-size: 24px;
+    }
+
+    section.aboutUs div.items-wrapper .item {
+        width: 50%;
+        margin: 50px 0;
+    }
+
+    section.aboutUs div.items-wrapper .item p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    section.aboutUs div.items-wrapper .item {
+        width: 33.33%;
+        margin: 60px 0;
+    }
+}
+
 section.aboutUs div.numbers-wrapper {
-    height: 230px;
+    /* height: 230px; */
     background-color: rgb(228, 227, 227);
 }
 
@@ -328,31 +395,75 @@ section.aboutUs div.numbers-wrapper .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 230px;
+    flex-direction: column;
 }
 
 section.aboutUs div.numbers-wrapper .container .number {
-    width: 25%;
+    width: 100%;
     text-align: center;
+    padding: 20px;
 }
 
 section.aboutUs div.numbers-wrapper .container .number h3 {
     font-size: 60px;
     line-height: 60px;
-    text-align: center;
     color: rgb(7, 179, 113);
     font-weight: 900;
+    padding: 20px;
 }
 
 section.aboutUs div.numbers-wrapper .container .number p {
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:768px) {
+    section.aboutUs div.numbers-wrapper .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.aboutUs div.numbers-wrapper .container .number {
+        width: 50%;
+    }
+
+    section.aboutUs div.numbers-wrapper .container .number:nth-child(3),
+    .number:nth-child(4) {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    section.aboutUs div.numbers-wrapper {
+        height: 230px;
+        align-items: center;
+    }
+
+    section.aboutUs div.numbers-wrapper .container {
+        height: 230px;
+    }
+
+    section.aboutUs div.numbers-wrapper .container .number {
+        width: 25%;
+        padding: 0;
+        margin: 0;
+    }
+
+    section.aboutUs div.numbers-wrapper .container .number h3 {
+        padding-top: 0;
+    }
+
+    section.aboutUs div.numbers-wrapper .container .number p {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 section.aboutUs div.collab {
-    height: 400px;
-    width: 100%;
+    /* height: 400px; */
     background-color: rgb(7, 179, 113);
 }
 
@@ -362,7 +473,7 @@ section.aboutUs div.collab .container h4 {
     line-height: 45px;
     color: #fff;
     text-align: center;
-    padding: 100px 0 0 0;
+    padding: 80px 0 0 0;
 }
 
 section.aboutUs div.collab .container p {
@@ -384,57 +495,84 @@ section.aboutUs div.collab .container p::after {
 
 section.aboutUs div.collab .container .logo-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 100px;
-    align-items: baseline;
-    margin-top: 90px;
+
+    margin-top: 70px;
+    text-align: center;
 }
 
 section.aboutUs div.collab .container .logo-wrapper .logo {
-    width: 25%;
-    padding: 0 60px;
+    width: 100%;
+    padding: 30px 60px;
+}
+
+@media screen and (min-width:768px) {
+    section.aboutUs div.collab .container .logo-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.aboutUs div.collab .container .logo-wrapper .logo {
+        width: 50%;
+        padding: 30px 60px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    section.aboutUs div.collab .container .logo-wrapper .logo {
+        width: 25%;
+        margin-bottom: 70px;
+    }
+
+    section.aboutUs div.collab .container .logo-wrapper {
+        align-items: baseline;
+
+    }
 }
 
 .join-to-us {
     width: 100%;
 }
 
-.join-to-us h2{
+.join-to-us h2 {
     width: 100%;
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
 }
 
-.join-to-us h3{
+.join-to-us h3 {
     width: 100%;
     text-align: center;
     color: grey;
     font-weight: 400;
     margin-bottom: 20px;
 }
-.join-to-us .container{
+
+.join-to-us .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 25px;
 }
-.single-card{
+
+.single-card {
     width: 100%;
     max-width: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 40px auto;
-    }
+}
 
-.single-card h4{
+.single-card h4 {
     font-size: 1.4em;
     font-weight: lighter;
     margin: 15px 0;
 }
 
-.single-card h4::after{
+.single-card h4::after {
     content: "";
     display: block;
     width: 120px;
@@ -444,32 +582,37 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     background-color: black;
 }
 
-.single-card span{
+.single-card span {
     color: aqua;
 }
+
 .single-card p {
     text-align: center;
     font-weight: 300;
     line-height: 1.3em;
 }
 
-.home{
+.banner {
     width: 100%;
     text-align: center;
-    background-color:rgb(7, 179, 113);
+    background-color: rgb(7, 179, 113);
     padding-bottom: 25px;
 }
-.home .container{
+
+.banner .container {
     text-align: center;
 }
-.home p {
+
+.banner p {
     color: white;
 
     line-height: 1.2em;
 }
-.motto{
+
+.motto {
     padding: 20px 0 0;
 }
+
 .motto:after {
     content: "";
     display: block;
@@ -480,7 +623,7 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     margin: 25px auto;
 }
 
-.sign{
+.sign {
     padding: 0 0 25px;
 }
 
@@ -489,38 +632,33 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     color: rgb(7, 179, 113);
     background-color: white;
     outline: none;
-
     padding: 10px 25px;
-
     margin: 25px 0;
 }
 
 
-section.news div.intro {
+section.news-articles div.intro {
     /* height: 250px; */
     margin-top: 80px;
 }
 
-
-
-section.news div.intro h3 {
-    font-size: 36px;
-    line-height: 50px;
+section.news-articles div.intro h3 {
+    font-size: 30px;
+    line-height: 40px;
     color: black;
     font-weight: 900;
     text-align: center;
 }
 
-section.news div.intro h4 {
-    font-size: 30px;
+section.news-articles div.intro h4 {
+    font-size: 24px;
     line-height: 30px;
     color: black;
     font-weight: 300;
     text-align: center;
-
 }
 
-section.news div.intro h4::after {
+section.news-articles div.intro h4::after {
     content: "";
     display: block;
     margin: 20px auto;
@@ -532,42 +670,117 @@ section.news div.intro h4::after {
 }
 
 
-section.news div.articles {
-    height: 500px;
+section.news-articles .articles::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 111px solid rgb(228, 227, 227);
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: -4;
+}
+
+section.news-articles div.articles {
     background-color: rgb(228, 227, 227);
     width: 100%;
 }
 
-
-section.news div.articles .conteiner .articles-wrapper {
+section.news-articles .container .articles-wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-section.news div.articles .conteiner .article {
-    background-color: white;
-    width: 33.33%;
-    margin: 30px 70px;
+section.news-articles .container .articles-wrapper .article {
+    margin: 20px 0;
     border-bottom: 3px solid rgb(7, 179, 113);
+    background-color: #fff;
+}
+
+section.news-articles div.container div.articles-wrapper .article img {
+    width: 100%;
+}
+
+section.news-articles div.container div.articles-wrapper .article h5 {
+    padding-top: 20px;
+    font-size: 18pt;
+    font-weight: 100;
+    line-height: 36px;
+    margin: 0 0 0 15px;
+}
+
+section.news-articles div.container div.articles-wrapper .article h6 {
+    font-size: 13pt;
+    line-height: 20px;
+    font-weight: 100;
+    color: rgb(107, 107, 107);
+    margin: 0 0 15px 15px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    section.news-articles div.intro h3 {
+        font-size: 33px;
+        line-height: 50px;
+    }
+
+    section.news-articles div.intro h4 {
+        font-size: 28px;
+    }
+
+    section.news-articles .container .articles-wrapper {
+        flex-direction: row;
+    }
+
+    section.news-articles .container .articles-wrapper .article {
+        width: 45%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.news-articles div.intro h3 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    section.news-articles div.intro h4 {
+        font-size: 30px;
+    }
+
+    section.news-articles .container .articles-wrapper {
+        flex-direction: row;
+    }
+
+    section.news-articles .container .articles-wrapper .article {
+        width: 30%;
+        margin: 20px auto;
+    }
+}
+
+.news-articles .button {
     text-align: center;
-
 }
 
-section.news div.articles .conteiner .article h5,
-p {
-    text-align: left;
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px;
+    line-height: 30px;
+    background-color: #fff;
+    color: rgb(7, 179, 113);
+    text-decoration: none;
+    margin: 40px 0 40px 0;
 }
 
-section.news div.articles .conteiner .article h5 {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 400;
-    padding: 20px 0 0 20px;
-}
-
-section.news div.articles .conteiner .article p {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 300;
-    padding: 0 0 20px 20px;
+@media screen and (min-width:768px) {
+    .btn {
+        padding: 10px 80px;
+    }
 }
