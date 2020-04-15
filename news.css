@@ -15,7 +15,7 @@ p {
 
 body {
     overflow-x: hidden;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -26,6 +26,7 @@ body {
 
 header {
     position: relative;
+    /*height: 10vh;*/
     width: 100%;
     margin: 25px;
 }
@@ -41,14 +42,13 @@ header .container {
 header .logo {
     width: 25vw;
     height: auto;
-
 }
 
 .mobile-btn {
     width: 50px;
     position: relative;
     height: 5px;
-    background-color: coral;
+    background-color: rgb(7, 179, 113);
     transition: 0.2s ease;
 }
 
@@ -58,7 +58,7 @@ header .logo {
     width: 50px;
     display: block;
     height: 5px;
-    background-color: coral;
+    background-color: rgb(7, 179, 113);
     position: absolute;
     z-index: 10;
 }
@@ -151,8 +151,7 @@ nav a {
 
     nav a {
         font-size: 12pt;
-        color: aqua;
-
+        color: rgb(7, 179, 113);
     }
 
     nav a:hover {
@@ -160,34 +159,32 @@ nav a {
     }
 }
 
-
-
-.news {
+.home {
     width: 100%;
-    background: white url("assets/aktualnosc wybrana/background_image.jpg") no-repeat center;
+    background: white url("assets/aktualnosci/background_image.jpg") no-repeat center;
     background-size: cover;
     color: white;
     font-family: sans-serif;
     padding-top: 25px;
 }
 
-.news .container {
+.home .container {
     padding-bottom: 25px;
 }
 
-.news h1 {
+.home h1 {
     margin: 0;
-    font-weight: bold;
+    font-weight: 900;
     padding-top: 25%;
-    font-size: 4em;
+    font-size: 45px;
 }
 
-.news h2 {
+.home h2 {
     margin: 0;
     font-size: 2em;
 }
 
-.news p::after {
+.home p::after {
     content: "";
     display: block;
     width: 50%;
@@ -196,62 +193,254 @@ nav a {
     margin: 20px 0;
 }
 
-.news a {
+.home a {
     text-decoration: none;
     color: white;
     margin: 20px 0;
 }
 
 @media screen and (min-width: 768px) {
-    .news {
+    .home h1 {
+        font-size: 60px;
+    }
+
+    .home {
         padding-top: 35px;
         font-size: 1.2em;
     }
 
-    .news .container {
+    .home .container {
         padding-bottom: 35px;
     }
 
-    .news p::after {
+    .home p::after {
         margin: 30px 0;
     }
 
-    .news a {
+    .home a {
         margin: 30px 0;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .news {
+    .home {
         padding-top: 35px;
         font-size: 1.4em;
     }
 
-    .news .container {
+    .home .container {
         padding-bottom: 35px;
     }
 
-    .news h1 {
+    .home h1 {
         font-size: 100pt;
         font-weight: 900;
-
     }
 
-    .news h2 {
+    .home h2 {
         font-size: 54pt;
     }
 
-    .news p {
+    .home p {
         font-size: 18pt;
+        padding: 20px 400px 0 0;
     }
 
-    .news p::after {
+    .home p::after {
         margin: 40px 0;
     }
 
-    .news a {
+    .home a {
         font-size: 18pt;
         font-style: italic;
         margin: 40px 0;
+    }
+}
+
+section.news .container h3 {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 80px;
+    padding-bottom: 10px;
+}
+
+section.news .container h4 {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+section.news .container h4::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.315);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+section.news .container p {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 60px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+    section.news .container h3 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    section.news .container h4 {
+        font-size: 26px;
+    }
+
+    section.news .container p {
+        font-size: 18px;
+        font-weight: 100;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.news .container h3 {
+        font-size: 45pt;
+        line-height: 60px;
+    }
+
+    section.news .container h4 {
+        font-size: 30pt;
+        line-height: 60px;
+        font-weight: 100;
+    }
+
+    section.news .container h4:after {
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    section.news .container p {
+        font-size: 13pt;
+        line-height: 30px;
+        font-weight: 100;
+        margin-bottom: 100px;
+        padding: 0 120px;
+    }
+}
+
+section.news .container .articles-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+section.news .container .articles-wrapper .article {
+    width: 100%;
+    margin: 20px 0;
+    border-bottom: 3px solid rgb(7, 179, 113);
+}
+
+section.news div.container div.articles-wrapper .article img {
+    width: 100%;
+}
+
+section.news div.container div.articles-wrapper .article h5 {
+    padding-top: 20px;
+    font-size: 18pt;
+    font-weight: 100;
+    line-height: 36px;
+    margin: 0 0 0 15px;
+}
+
+section.news div.container div.articles-wrapper .article h6 {
+    font-size: 13pt;
+    line-height: 20px;
+    font-weight: 100;
+    color: rgb(107, 107, 107);
+    margin: 0 0 15px 15px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    section.news .container .articles-wrapper {
+        flex-direction: row;
+    }
+
+    section.news .container .articles-wrapper .article {
+        width: 45%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.news .container .articles-wrapper {
+        flex-direction: row;
+    }
+
+    section.news .container .articles-wrapper .article {
+        width: 30%;
+        margin: 20px auto;
+    }
+}
+
+section.news .button {
+    text-align: center;
+}
+
+section.news div.container .btn {
+    display: inline-block;
+    font-size: 12pt;
+    line-height: 20px;
+    color: white;
+    background-color: rgb(7, 179, 113);
+    text-align: center;
+    padding: 5px 70px;
+    text-decoration: none;
+    margin: 70px 0;
+}
+
+footer {
+    background-color: rgb(228, 227, 227);
+    font-size: 10pt;
+    padding: 20px 0;
+    height: 100%;
+}
+
+footer .container .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .facebook {
+    height: 20px;
+    width: 15px;
+}
+
+footer .container .footer-wrap .arrow,
+.facebook,
+.footer-tekst {
+    margin: 0;
+    width: 33.33%;
+}
+
+@media screen and (min-width:768px) {
+    footer {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    footer {
+        font-size: 16pt;
     }
 }
