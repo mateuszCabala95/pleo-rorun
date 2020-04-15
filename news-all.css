@@ -48,7 +48,7 @@ header .logo {
   width: 50px;
   position: relative;
   height: 5px;
-  background-color: coral;
+  background-color: rgb(7, 179, 113);
   transition: 0.2s ease;
 }
 
@@ -58,7 +58,7 @@ header .logo {
   width: 50px;
   display: block;
   height: 5px;
-  background-color: coral;
+  background-color: rgb(7, 179, 113);
   position: absolute;
   z-index: 10;
 }
@@ -151,7 +151,7 @@ nav a {
 
   nav a {
     font-size: 12pt;
-    color: aqua;
+    color: rgb(7, 179, 113);
   }
 
   nav a:hover {
@@ -243,6 +243,7 @@ nav a {
 
   .home p {
     font-size: 18pt;
+    padding: 20px 400px 0 0;
   }
 
   .home p::after {
@@ -409,12 +410,37 @@ section.news div.container .btn {
 
 footer {
   background-color: rgb(228, 227, 227);
-  font-size: 16pt;
+  font-size: 10pt;
   padding: 20px 0;
+  height: 100%;
 }
 
-footer .container .wrapper {
+footer .container .footer-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+footer .facebook {
+  height: 20px;
+  width: 15px;
+}
+
+footer .container .footer-wrap .arrow,
+.facebook,
+.footer-tekst {
+  margin: 0;
+  width: 33.33%;
+}
+
+@media screen and (min-width:768px) {
+  footer {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  footer {
+    font-size: 16pt;
+  }
 }
