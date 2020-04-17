@@ -545,7 +545,6 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     font-weight: 400;
     margin-bottom: 20px;
 }
-
 .join-to-us .container {
     display: flex;
     flex-wrap: wrap;
@@ -574,7 +573,6 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
     width: 120px;
     margin: 10px auto;
     height: 1px;
-    /*color: black;*/
     background-color: black;
 }
 
@@ -596,19 +594,21 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
 }
 
 .banner .container {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 25px;
 }
 
 .banner p {
     color: white;
 
     line-height: 1.2em;
+    padding: 50px 0 0;
 }
-
-.motto {
-    padding: 20px 0 0;
+.motto{
+    color: white;
 }
-
 .motto:after {
     content: "";
     display: block;
@@ -618,19 +618,24 @@ section.aboutUs div.collab .container .logo-wrapper .logo {
 
     margin: 25px auto;
 }
-
-.sign {
+.sign{
+    width: 100%;
     padding: 0 0 25px;
+    text-align: center;
+    color: white;
 }
 
-.home a {
+.join-to-us a {
     text-decoration: none;
     color: rgb(7, 179, 113);
     background-color: white;
     outline: none;
+
     padding: 10px 25px;
+
     margin: 25px 0;
 }
+
 
 section.news-articles div.intro {
     /* height: 250px; */
@@ -657,12 +662,10 @@ section.news-articles div.intro h4 {
 section.news-articles div.intro h4::after {
     content: "";
     display: block;
-    margin: 20px auto;
     background-color: rgb(192, 192, 192);
     height: 1px;
     width: 200px;
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin: 40px auto 80px;
 }
 
 section.news-articles .articles::before {
