@@ -160,7 +160,7 @@ nav a {
 
 .home {
     width: 100%;
-    background: white url("assets/o\ nas/background_image.jpg") no-repeat center;
+    background: white url("assets/o nas/background_image.jpg") no-repeat center;
     background-size: cover;
     color: white;
     font-family: sans-serif;
@@ -275,8 +275,7 @@ nav a {
     width: 150px;
     height: 1px;
     background-color: rgba(0, 0, 0, 0.315);
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px auto 0;
 }
 
 .aboutUs .motto {
@@ -580,17 +579,16 @@ h3>span {
 
 .join-to-us {
     width: 100%;
+    padding: 20px 0 0;
+    background-color: rgb(7, 179, 113);
 }
+
 
 .join-to-us .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 25px;
-}
-.join-to-us{
-    padding: 20px 0 0;
-    background-color: rgb(7, 179, 113);
 }
 
 .motto{
@@ -626,52 +624,41 @@ h3>span {
 }
 
 
+
 footer {
-    background-color: rgba(100, 100, 100, 0.5);
-    width: 100%;
+    background-color: rgb(201, 199, 199);
+    font-size: 10pt;
+    padding: 20px 0;
+    height: 100%;
+    margin-top: -25px;
 }
 
-footer .container {
+footer .container .footer-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    font-size: 0.5em;
-    line-height: 2em;
-    height: 50px;
 }
 
-footer a {
-    justify-self: center;
-    text-decoration: none;
-    color: grey;
-    font-size: 4em;
-}
-
-
-footer img {
+footer .facebook {
+    height: 20px;
     width: 15px;
 }
 
+footer .container .footer-wrap a,
+.facebook,
+p.tekst {
+    margin: 0;
+    width: 33.33%;
+}
 
-@media screen and (min-width: 768px) {
-    footer .container {
-        font-size: 1em;
-        line-height: 2em;
-    }
-
-    footer a {
-        margin-right: 165px;
+@media screen and (min-width:768px) {
+    footer {
+        font-size: 12pt;
     }
 }
-@media screen and (min-width: 1200px) {
 
-    footer .container {
-        font-size: 1em;
-        line-height: 2em;
-    }
-
-    footer a {
-        margin-right: 165px;
+@media screen and (min-width:1200px) {
+    footer {
+        font-size: 16pt;
     }
 }
